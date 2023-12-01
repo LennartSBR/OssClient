@@ -1,0 +1,37 @@
+{
+  "name": "ossclient",
+  "productName": "OSS-Client",
+  "version": "1.1.0",
+  "description": "Digital in der Schule",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.lslabs.ossclient",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/icon.ico"
+    }
+  },
+  "nsis": {
+    "oneClick": true,
+    "installerIcon": "src/icon.ico",
+    "uninstallerIcon": "src/icon.ico",
+    "uninstallDisplayName": "Uninstalling - OSS Client",
+    "allowToChangeInstallationDirectory": false
+  },
+  "keywords": [],
+  "author": {
+    "name": "LsLabs",
+    "email": "lennart.schmehr@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.1.2",
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2"
+  }
+}
