@@ -1,2 +1,2 @@
-# UntisClient
- The timetable in your PC
+# OssClient
+ Digital in der Schule
